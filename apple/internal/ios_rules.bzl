@@ -130,7 +130,7 @@ def _ios_application_impl(ctx):
         partials.swift_dylibs_partial(
             binary_artifact = binary_artifact,
             dependency_targets = embeddable_targets,
-            bundle_dylibs = True,
+            bundle_dylibs = False,
             package_swift_support_if_needed = True,
         ),
     ]
